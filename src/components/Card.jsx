@@ -4,13 +4,14 @@ import styles from "./Card.module.css";
 
 import { FaHeart } from "react-icons/fa";
 
-const Card = ({book}) => {
+const Card = ({book,handleLikedList}) => {
     const { author,image,pages,title,language}=book;
 
     const [like,setLike]=useState(false);
 
     const btnHandler=()=>{
-        setLike(like => !like)
+        handleLikedList(book,like);
+        setLike(like => !like);
     }
     return (
         <div className={styles.card}>

@@ -1,11 +1,18 @@
 
 
 .header,.footer {
-    background-color: #0808c7;
+    background-color: #303030;
     color: #fff;
     padding: 16px 0px;
     border-radius: 5px;
     text-align: center;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+
+}
+
+.footer {
+    margin-bottom: 0px;
 }
 
 .header,.footer p {
