@@ -1,0 +1,14 @@
+
+
+.header,.footer {
+    background-color: #0808c7;
+    color: #fff;
+    padding: 16px 0px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.header,.footer p {
+    font-size: 1.5rem;
+    font-weight: 500px;
+}
