@@ -25,11 +25,20 @@ const BookCard = () => {
     } else {
         setLiked((prev)=>([...prev,book]))
     }
+    };
+
+    const searchBoxHandler=()=>{
+        if(search.trim()){
+            const newBooks=data.filter((i)=>i.title.toLowerCase().includes(search.toLowerCase()));
+            setBooks(newBooks);
+        }else {
+         setBooks(data)
+        }
     }
 
     return (
        <>
-       <SearchBox search={search} searchHandler={searchHandler}/>
+       <SearchBox search={search} searchHandler={searchHandler} searchBoxHandler={searchBoxHandler}/>
         <div className={styles.container}>
             <div className={styles.cards}>
               {books.map((item)=>(
